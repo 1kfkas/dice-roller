@@ -40,7 +40,7 @@ p.jogados{
 p.iniciativas{
     position: absolute;
     font-size: 12px;
-    top: 40%;
+    top: 260px;
     left: 50%;
 }
 
@@ -76,7 +76,7 @@ button{
 
 button.iniciativa{
     position: absolute;
-    top: 32%;
+    top: 210px;
     left: 50%;
 }
 
