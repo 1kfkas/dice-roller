@@ -18,18 +18,18 @@ p{
 
 .testes-group p{
     position: absolute;
-    top: 25%;
+    top: 160px;
     left: 30%;
 }
 
 p.testes{
-    top: 32%;
+    top: 200px;
     left: 34%;
 }
 
 p.state{
     text-align: center;
-    top: 39%;
+    top: 240px;
     left: 31%;
 }
 
@@ -46,19 +46,19 @@ p.iniciativas{
 
 .iniciativa-group p{
     position: absolute;
-    top: 21%;
+    top: 140px;
     left: 80%;
 }
 
 p.soma{
     position: absolute;
-    top: 28%;
+    top: 185px;
     left: 84%;
 }
 
 p.resultado{
     position: absolute;
-    top: 36%;
+    top: 230px;
     left: 85%;
 }
 
