@@ -1,6 +1,7 @@
 let testesJogados = 0;
 let iniciativasJogadas = 0;
 const stateText = document.getElementById("state");
+const deviceType = "desktop";
 
 function rollDice() {
     return getRandomNumber(1, 6);

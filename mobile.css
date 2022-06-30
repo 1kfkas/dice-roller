@@ -1,0 +1,88 @@
+body{
+    justify-content: center;
+    background-color: rgb(50, 50, 50);
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-size: 64px;
+    text-align: center;
+}
+
+p{
+    color: white;
+    font-size: 24px;
+    font-family: 'Lora', serif;
+}
+
+.testes-group p{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+
+p.testes{
+    top: 32%;
+    left: 34%;
+}
+
+p.state{
+    text-align: center;
+    top: 39%;
+    left: 31%;
+}
+
+p.jogados{
+    font-size: 12px;
+}
+
+p.iniciativas{
+    position: absolute;
+    font-size: 12px;
+    top: 40%;
+    left: 50%;
+}
+
+.iniciativa-group p{
+    position: absolute;
+    top: 21%;
+    left: 80%;
+}
+
+p.soma{
+    position: absolute;
+    top: 28%;
+    left: 84%;
+}
+
+p.resultado{
+    position: absolute;
+    top: 36%;
+    left: 85%;
+}
+
+button{
+    transition-duration: 0.4s;
+    padding: 16px;
+    width: 25%;
+    background-color: white;
+    font-size: relative;
+    color: black;
+    border: 2px solid #008CBA;
+    font-family: 'Lora', serif;
+    display: block;
+}
+
+button.iniciativa{
+    position: absolute;
+    top: 32%;
+    left: 50%;
+}
+
+button:hover{
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

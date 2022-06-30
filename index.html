@@ -7,22 +7,46 @@
 
         <meta charset="UTF-8"/>
         <title> Roll Dice - KFkas RPG </title>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="desktop.css" id="desktop">
+        <link rel="stylesheet" href="mobile.css" id="mobile">
+
+        <script>
+            if(/Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(navigator.userAgent)){
+                document.getElementById("desktop").disabled = true;
+                document.getElementById("mobile").disabled = false;
+            } else {
+                document.getElementById("desktop").disabled = false;
+                document.getElementById("mobile").disabled = true;
+            }
+
+            function clickEffect(p){
+                document.getElementById(p).style.backgroundColor = "white";
+            }
+
+            function clickedEffect(p){
+                document.getElementById(p).style.backgroundColor = document.body.style.backgroundColor;
+            }
+        </script>
     </head>
 
     <body>
-        <button id="normal-button" type="button" class="normal">NORMAL</button>
+        <h1>Dice Roller</h1>
+        <button id="normal-button" type="button" class="normal" onmousedown="clickEffect('testes')" onmouseup="clickedEffect('testes')">NORMAL</button>
         <button id="vantagem-button" type="button" class="vantagem">VANTAGEM</button>
         <button id="desvantagem-button" type="button" class="desvantagem">DESVANTAGEM</button>
         <p id="jogados" class="jogados">Testes Feitos : 0</p>
-        <p>Os dados são:</p>
-        <p id="testes" class="testes">0, 0</p>
-        <p id="state" class="state"></p>
+        <div class="testes-group">
+            <p>Os dados são:</p>
+            <p id="testes" class="testes">0, 0</p>
+            <p id="state" class="state"></p>
+        </div>
         <button id="iniciativa-button" type="button" class="iniciativa">INICIATIVA</button>
         <p id="iniciativas" class="iniciativas">Iniciativas Feitas : 0</p>
-        <p>O resultado é:</p>
-        <p id="soma" class="soma">0+0</p>
-        <p id="resultado" class="resultado">0</p>
+        <div class="iniciativa-group">
+            <p>O resultado é:</p>
+            <p id="soma" class="soma">0+0</p>
+            <p id="resultado" class="resultado">0</p>
+        </div>
         <script src="app.js"></script>
     </body>
 </html>
